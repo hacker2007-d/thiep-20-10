@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe3ef">
+<title>Gửi trangg cutee — từ Tiến 💗</title>
+<style>
+:root{--pink:#ff6fae;--ink:#68445b}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:"Trebuchet MS",system-ui,sans-serif;background:radial-gradient(circle at 10% 10%,#fff 0 3%,transparent 30%),linear-gradient(145deg,#ffe6f1,#f9e8ff 55%,#fff5d9);min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(#fff 1.5px,transparent 1.5px);background-size:24px 24px}
+.wrap{max-width:1000px;margin:auto;padding:28px 18px 70px;position:relative}
+.hero{text-align:center;padding:28px 10px 18px}
+.pill{display:inline-block;background:#fff9;border:1px solid #fff;padding:8px 14px;border-radius:999px;font-size:.88rem}
+h1{font-size:clamp(2.1rem,7vw,4.2rem);line-height:1.05;margin:18px 0 12px;color:#e85d9c;text-shadow:2px 3px #fff}
+.subtitle{font-size:1.05rem;max-width:650px;margin:0 auto;line-height:1.8}
+.btn{border:0;border-radius:999px;padding:13px 20px;background:linear-gradient(120deg,#ff70aa,#ff9ac6);color:white;font-weight:700;font-size:1rem;box-shadow:0 8px 20px #e86da544;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px) scale(1.02)}
+.section-title{text-align:center;font-size:1.6rem;color:#df5794;margin:32px 0 8px}
+.note{text-align:center;margin:0 0 24px;opacity:.85}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}
+.polaroid{background:#fff;padding:11px 11px 18px;border-radius:4px;box-shadow:0 12px 30px #9e61851c;transform:rotate(var(--tilt));transition:transform .25s,box-shadow .25s;cursor:pointer;position:relative}
+.polaroid:hover{transform:rotate(0) translateY(-5px);box-shadow:0 18px 35px #9e618533}
+.polaroid img{width:100%;height:340px;object-fit:cover;display:block;border-radius:2px}
+.polaroid:nth-child(2) img{object-position:center 35%}.polaroid:nth-child(3) img{object-position:center 28%}
+.caption{text-align:center;font-family:"Segoe Print","Comic Sans MS",cursive;font-size:1rem;margin:13px 0 0}
+.tape{position:absolute;top:-10px;left:38%;width:70px;height:22px;background:#ffd8e8b8;transform:rotate(-5deg)}
+.letter{margin:38px auto 0;max-width:760px;background:#fffdfdce;border:1px solid #fff;border-radius:25px;padding:clamp(22px,5vw,42px);box-shadow:0 16px 45px #9e61851a;line-height:1.95;font-size:1.04rem}
+.letter h2{text-align:center;color:#df5794;margin-top:0}
+.hidden-message{display:none;margin-top:18px;background:#fff0f7;padding:18px;border-radius:18px;line-height:1.9}
+.hidden-message.show{display:block;animation:appear .5s ease}
+.center{text-align:center;margin-top:24px}.footer{text-align:center;font-size:.9rem;opacity:.8;margin-top:32px}
+.heart{position:fixed;bottom:-40px;pointer-events:none;z-index:5;animation:floatUp linear forwards}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:720px){.gallery{grid-template-columns:1fr;max-width:430px;margin:auto;gap:25px}.polaroid img{height:430px}.polaroid:nth-child(2){margin-left:10px}.polaroid:nth-child(3){margin-right:10px}.hero{padding-top:18px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition:none!important}}
+</style></head>
+<body><main class="wrap">
+<header class="hero"><span class="pill">🌷 20/10 · Ngày của cô gái anh thương 🌷</span>
+<h1>Gửi trangg cutee 💗</h1>
+<p class="subtitle">Anh có một món quà nhỏ xíu dành riêng cho em. Không cần nơ, không cần hộp — chỉ cần em mở ra và mỉm cười một chút thôi là anh vui rồi.</p>
+<div style="margin-top:22px"><button class="btn" onclick="document.getElementById('album').scrollIntoView({behavior:'smooth'})">Mở album của em ✨</button></div></header>
+<h2 class="section-title" id="album">Một chiếc album nhỏ 📸</h2><p class="note">Ba khoảnh khắc xinh xắn, được anh cất vào một góc thật mềm của trái tim.</p>
+<section class="gallery" aria-label="Album ảnh của trangg">
+<article class="polaroid" style="--tilt:-2deg" onclick="showNote('note1')"><span class="tape"></span><img src="trangg-camera.jpg" alt="trangg cutee cầm máy ảnh"><p class="caption">Cô gái thích lưu giữ khoảnh khắc 📷</p></article>
+<article class="polaroid" style="--tilt:2deg" onclick="showNote('note2')"><span class="tape"></span><img src="trangg-sunflower.jpg" alt="trangg giữa vườn hoa hướng dương"><p class="caption">Nắng cũng muốn đứng cạnh em 🌻</p></article>
+<article class="polaroid" style="--tilt:-1deg" onclick="showNote('note3')"><span class="tape"></span><img src="trangg-stars.jpg" alt="trangg trong khung nền đầy sao"><p class="caption">Ngôi sao bé xinh của anh ⭐</p></article></section>
+<section class="letter" style="max-width:650px;text-align:center;margin-top:38px">
+<h2>🌹 Một kỷ niệm nhỏ của chúng mình</h2>
+<img src="bo-hoa-tien-tang.jpg" alt="Bó hoa Tiến tặng trangg cutee trước ngày 20/10 một tuần" style="display:block;width:100%;max-width:420px;max-height:560px;object-fit:cover;margin:0 auto 20px;border:10px solid white;box-shadow:0 10px 28px #9e618522;border-radius:4px">
+<p style="font-size:.9rem;opacity:.75">Một tuần trước ngày 20/10/2026 💗</p>
+<p><em>“Có những món quà không thể nói hết thành lời, nên anh chọn một bó hoa để thay anh gửi đến em một chút yêu thương.”</em></p>
+<p>“Mong rằng khi nhớ đến bó hoa này, em sẽ nhớ rằng đã có một người rất mong em vui, mong em luôn mỉm cười và mong em đạt được những điều em ước mơ.”</p>
+<p style="margin-bottom:0"><strong>— Tiến gửi trangg cutee 💗</strong></p>
+</section>
+
+<div class="letter"><h2>💌 Một lá thư dành riêng cho em</h2>
+<p>Trangg cutee à,</p>
+<p>Chúc em ngày 20/10 thật vui vẻ, luôn xinh xắn, bình an và được yêu thương thật nhiều. Mong những ngày bình thường của em cũng có thật nhiều điều nhỏ bé khiến em vui — một món ngon, một bài hát hay, một buổi chiều đẹp trời, hay đơn giản là có người luôn muốn nghe em kể chuyện.</p>
+<p>Anh không hứa lúc nào cũng hoàn hảo, nhưng anh muốn luôn cố gắng để em cảm thấy được quan tâm, được trân trọng và có thể thoải mái là chính mình khi ở cạnh anh. Cảm ơn em vì đã xuất hiện và làm những ngày của anh đáng yêu hơn một chút. 💗</p>
+<p>Chúc cô gái của anh luôn rạng rỡ như nắng, dịu dàng như hoa, và nhớ rằng em xứng đáng với những điều tốt đẹp nhất.</p>
+<div class="center"><button class="btn" onclick="revealSecret()">Có một lời nhắn anh muốn em đọc 💌</button></div>
+<div class="hidden-message" id="secret">
+<p>Trangg à, anh muốn chúc em luôn cười thật nhiều, đừng để những chuyện buồn làm em quên mất nụ cười xinh xắn của mình nhé. Nếu có lúc mệt mỏi, cứ nghỉ một chút rồi lại bước tiếp — anh tin em sẽ làm được những điều mà em mong muốn.</p>
+<p>Anh chúc em đậu <strong>nguyện vọng 1 của cuộc đời mình</strong>, đạt được mục tiêu em ấp ủ và có đủ can đảm để đi đến con đường mà em thật sự muốn chọn. Mong rằng sau này nhìn lại, em sẽ tự hào vì đã không bỏ cuộc với chính mình. 🌷</p>
+<p>Và nếu có những ngày em thật sự không vui, không biết phải kể với ai, hoặc chỉ đơn giản là muốn có người ngồi nghe em tâm sự, thì em có thể gọi cho anh bất cứ lúc nào nhé. Anh không chắc mình luôn có câu trả lời cho mọi chuyện, nhưng anh sẽ cố gắng lắng nghe em thật lòng. Em không cần phải lúc nào cũng mạnh mẽ hay giả vờ ổn đâu.</p>
+<p>Nhớ nhé: em không cần phải đi thật nhanh, chỉ cần đừng quên bản thân mình và cứ bước tiếp theo cách của em. Anh mong em luôn bình an, luôn có lý do để mỉm cười — và khi cần, cứ gọi Tiến. 💗</p>
+<p style="text-align:center;font-size:1.35rem">🫂 💗 🌻 ⭐ 💗 🫂</p>
+</div>
+<p style="text-align:right;margin-bottom:0">Thương em,<br><strong>Tiến 💗</strong></p></div>
+<p class="footer">Được làm bằng một chút code và rất nhiều sự cưng chiều 💗<br>20.10.2026 · dành riêng cho trangg cutee</p>
+</main>
+<script>
+function showNote(id){const notes={note1:'Nếu mỗi tấm ảnh đều giữ lại một khoảnh khắc, anh mong mình sẽ có thật nhiều khoảnh khắc đáng nhớ cùng em. 📸💗',note2:'Mong cuộc sống của em luôn có nắng ấm, hoa xinh và những người thật lòng thương em. 🌻',note3:'Giữa cả bầu trời rộng lớn, anh vẫn thấy em là một điều đặc biệt. ⭐💞'};let old=document.getElementById('photo-note');if(old)old.remove();const el=document.createElement('div');el.id='photo-note';el.className='letter';el.style.marginTop='18px';el.style.textAlign='center';el.textContent=notes[id];document.querySelector('.gallery').after(el);el.scrollIntoView({behavior:'smooth',block:'nearest'});}
+function revealSecret(){document.getElementById('secret').classList.toggle('show');for(let i=0;i<18;i++)setTimeout(makeHeart,i*90)}
+function makeHeart(){const h=document.createElement('div');h.className='heart';h.textContent=['💗','💕','💖','♡','🌸'][Math.floor(Math.random()*5)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(16+Math.random()*22)+'px';h.style.animationDuration=(3+Math.random()*3)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),6500)}
+setInterval(()=>{if(!document.hidden)makeHeart()},1800);
+</script></body></html>
